@@ -1,0 +1,326 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(229, 229, 229);
+    color: #333;
+   
+    
+
+}
+
+
+.hero {
+    
+    position: relative; /* Permet de positionner les éléments enfants (texte et navbar) par rapport à cette section */
+    width: 100%; /* Occupe toute la largeur de la page */
+    height: 100%; /* Hauteur égale à celle de la fenêtre */
+    /* background-image: url('https://img.freepik.com/photos-gratuite/chat-gris-mur-monochrome-derriere-elle_23-2148955126.jpg?t=st=1745835418~exp=1745839018~hmac=a356f884bc6adee2b7a68bf67ffa58bb176fe4fb1e0907f7ff6335439c8a49a8&w=996');  */
+    /* background-image: url(sportsho.png); */
+    /* background-size: cover;  */
+    /* background-position: center; */
+    color: white; /* Couleur du texte sur l'image */
+    /* Centre le texte horizontalement */
+    overflow: hidden; /* Empêche les débordements */
+   
+}
+
+/* Barre de navigation */
+.navbar {
+    /* position:fixed; */
+    
+    /* padding-left: 30px; */
+    
+    /* backdrop-filter: blur(70px); */
+    background-color: rgba(238, 238, 238, 0.984);
+   
+  
+    
+    
+    z-index: 2; 
+    width: 100%;
+    color: #000000;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+
+   
+
+ 
+    gap: 5%;
+   display: flex;
+    align-items: center;
+   
+    height: 45px;
+    width: 100%;
+    
+   
+    
+ 
+
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #686868; /* Couleur de l'icône */
+  }
+  
+  input[type="search"] {
+    padding-right: 40px;
+    border: none; /* Espace pour l'icône */
+  }
+
+
+
+#gsearch{
+    background-color: #d2cbcb;
+    width: 200px;
+    padding: 10px;
+    
+    height: 30px;
+}
+.mypresontation{
+    background-color: #d4dee6;
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.banner{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+   
+    
+
+}
+ul li:hover{
+   
+    border-bottom: #01031b solid 1px;
+    
+}
+.mesimg{
+    flex:1;
+    
+}
+.clipv{
+    height: 70vh;
+    background-color: #c9b681;
+    width: 100%;
+}
+
+
+/* Contenu superposé sur l'image */
+.hero-content {
+    position: absolute; /* Positionne le contenu par rapport à la section Hero */
+    width: 500px;
+    top: 150px;
+    left:70px;
+    /* background-color: aqua; */
+  
+ 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+
+/* Sections-scrol */
+
+.section_scrol{
+    padding: 20px;
+    width: 100%;
+    overflow-x:auto;
+    
+
+}
+.content_scrol{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    flex-shrink: 0;
+    flex-grow:0;
+    overflow-x: auto;
+    margin-left: 55px;
+    margin-top: 29px;
+    padding-bottom: 15px;
+}
+.produit_scrol{
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: #ffffff;
+    width:auto;
+    height: auto;
+
+}
+
+.img_scrol {
+    width: 280px;
+    height: 470px;
+    /* Hauteur fixe (ajuste selon tes besoins) */
+    overflow: hidden;
+    flex-grow: 1;
+    
+}
+
+/* Cache la deuxième image par défaut */
+/* .img_scrol img:nth-child(2) {
+    display: none;
+} */
+
+/* Affiche la deuxième image quand on survole le conteneur .img_scrol */
+/* .img_scrol:hover img:nth-child(2) {
+    display: block;
+} */
+
+/* Cache la première image au survol (optionnel) */
+/* .img_scrol:hover img:nth-child(1) {
+    display: none;
+} */
+.img_scrol img{
+   
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre la zone sans déformation */
+    transition: transform 0.3s ease-in-out;
+ 
+       
+
+}
+.img_scrol img:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* Sections2 */
+
+.section {
+    padding: 20px;
+    width: auto;
+ 
+
+    overflow: hidden;
+    
+  
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.product-flex {
+    display: flex;
+    padding-left: 20px;
+ 
+    
+    gap: 21px;
+    justify-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebeaf2;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 380px;
+    
+  
+    
+   
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+.disc{
+    margin-bottom: 11px;
+    padding: 7px;
+}
+.disc h4{
+ position: relative;
+ left: 230px;
+ top:7px
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    border: #000000 solid 1px;
+}
+.divimg{
+    width: 100%;
+    height: 230px;
+    /* Hauteur fixe (ajuste selon tes besoins) */
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.product img {
+   
+   
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre la zone sans déformation */
+    transition: transform 0.3s;
+ 
+       
+   /* ou "contain" si vous voulez voir toute l'image sans rognage */
+}
+
+
+
+.product p {
+    font-size: 0.7rem;
+    color: #000000;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #01031b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
+}

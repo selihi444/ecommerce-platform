@@ -1,0 +1,10 @@
+# Fichiers sensibles et temporaires
+.env
+*.log
+
+# Si tu as des configs locales
+conn.php
+
+# Ignorer le contenu des uploads (vendeurs), mais garder le dossier
+controller/uploads/*
+!controller/uploads/.gitkeep
